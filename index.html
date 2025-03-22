@@ -1,0 +1,31 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <title>save Johnny 🔟🕜</title>
+  <h1 style="font-family:schoolbell;color:red;">help Johnny</h1>
+</head>
+<body>
+  <h2>Beginning</h2>
+  <p>You wake up in a cell of some sort. You see your childhood friend Johnny and a timer set for 10 minutes by the time you opened this site, it has started.</p>
+  <p style="font-family:schoolbell;">Help you and Johnny escape and we can go to the police station</p>
+  <p>Johhny says</p>
+  <p>theres a lock, enter the correct code to escape</p>
+  <input type="text" id="codeinput" placeholder="enter code here"><button onclick="checkcode()">Submit</button>
+</body>
+<!-- <a href="secret.html">Dont click this!</a> -->
+
+<script>
+  function checkCode() {
+            const correctCode = "3057"; 
+            const userCode = document.getElementById("codeInput").value;
+            const message = document.getElementById("message");
+
+            if (userCode === correctCode) {
+                message.textContent = window.location.href = "win.html";
+            } else {
+                alert("❌ Incorrect code. Try again.";)
+            }
+        }
+        setTimeout(function() {
+            window.location.href = "death.html";
+        }, 600000);
+</script>
